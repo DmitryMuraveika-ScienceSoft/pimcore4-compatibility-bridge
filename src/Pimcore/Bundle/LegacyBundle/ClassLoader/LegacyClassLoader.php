@@ -112,7 +112,7 @@ class LegacyClassLoader
 
             // check if the class is a model, if so, load it
             if(!class_exists($namespacedClass, false)) {
-                \Pimcore::getAutoloader()->loadClass($namespacedClass);
+//                \Pimcore::getAutoloader()->loadClass($namespacedClass);
             }
 
             if (Tool::classExists($namespacedClass) || Tool::interfaceExists($namespacedClass)) {
